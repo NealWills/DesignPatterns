@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0840B3972507891D00D5702B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3962507891D00D5702B /* AppDelegate.swift */; };
-		0840B3992507891D00D5702B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3982507891D00D5702B /* SceneDelegate.swift */; };
 		0840B39B2507891D00D5702B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B39A2507891D00D5702B /* ViewController.swift */; };
 		0840B39E2507891D00D5702B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0840B39C2507891D00D5702B /* Main.storyboard */; };
 		0840B3A02507891F00D5702B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0840B39F2507891F00D5702B /* Assets.xcassets */; };
 		0840B3A32507891F00D5702B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0840B3A12507891F00D5702B /* LaunchScreen.storyboard */; };
+		0840B3DF2507E5EE00D5702B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3DE2507E5EE00D5702B /* NotificationViewController.swift */; };
+		0840B3E12507E62300D5702B /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3E02507E62300D5702B /* Seller.swift */; };
+		0840B3E32507E62F00D5702B /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3E22507E62F00D5702B /* Custom.swift */; };
+		0840B3E52507E65B00D5702B /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3E42507E65B00D5702B /* Apple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0840B3932507891D00D5702B /* Pattern-Notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pattern-Notification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0840B3962507891D00D5702B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0840B3982507891D00D5702B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0840B39A2507891D00D5702B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0840B39D2507891D00D5702B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0840B39F2507891F00D5702B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0840B3A22507891F00D5702B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0840B3A42507891F00D5702B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0840B3DE2507E5EE00D5702B /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		0840B3E02507E62300D5702B /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		0840B3E22507E62F00D5702B /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		0840B3E42507E65B00D5702B /* Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		0840B3952507891D00D5702B /* Pattern-Notification */ = {
 			isa = PBXGroup;
 			children = (
+				0840B3DD2507E5CC00D5702B /* Notification */,
+				0840B3DC2507E5BF00D5702B /* other */,
+			);
+			path = "Pattern-Notification";
+			sourceTree = "<group>";
+		};
+		0840B3DC2507E5BF00D5702B /* other */ = {
+			isa = PBXGroup;
+			children = (
 				0840B3962507891D00D5702B /* AppDelegate.swift */,
-				0840B3982507891D00D5702B /* SceneDelegate.swift */,
 				0840B39A2507891D00D5702B /* ViewController.swift */,
 				0840B39C2507891D00D5702B /* Main.storyboard */,
 				0840B39F2507891F00D5702B /* Assets.xcassets */,
 				0840B3A12507891F00D5702B /* LaunchScreen.storyboard */,
 				0840B3A42507891F00D5702B /* Info.plist */,
 			);
-			path = "Pattern-Notification";
+			path = other;
+			sourceTree = "<group>";
+		};
+		0840B3DD2507E5CC00D5702B /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				0840B3DE2507E5EE00D5702B /* NotificationViewController.swift */,
+				0840B3E02507E62300D5702B /* Seller.swift */,
+				0840B3E22507E62F00D5702B /* Custom.swift */,
+				0840B3E42507E65B00D5702B /* Apple.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0840B3E52507E65B00D5702B /* Apple.swift in Sources */,
 				0840B39B2507891D00D5702B /* ViewController.swift in Sources */,
 				0840B3972507891D00D5702B /* AppDelegate.swift in Sources */,
-				0840B3992507891D00D5702B /* SceneDelegate.swift in Sources */,
+				0840B3E12507E62300D5702B /* Seller.swift in Sources */,
+				0840B3DF2507E5EE00D5702B /* NotificationViewController.swift in Sources */,
+				0840B3E32507E62F00D5702B /* Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Pattern-Notification/Info.plist";
+				INFOPLIST_FILE = "Pattern-Notification/other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Pattern-Notification/Info.plist";
+				INFOPLIST_FILE = "Pattern-Notification/other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
