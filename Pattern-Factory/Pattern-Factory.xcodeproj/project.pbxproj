@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		0840B357250788F100D5702B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B356250788F100D5702B /* AppDelegate.swift */; };
-		0840B359250788F100D5702B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B358250788F100D5702B /* SceneDelegate.swift */; };
 		0840B35B250788F100D5702B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B35A250788F100D5702B /* ViewController.swift */; };
 		0840B35E250788F100D5702B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0840B35C250788F100D5702B /* Main.storyboard */; };
 		0840B360250788F100D5702B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0840B35F250788F100D5702B /* Assets.xcassets */; };
 		0840B363250788F100D5702B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0840B361250788F100D5702B /* LaunchScreen.storyboard */; };
+		0840B3CD2507CCEF00D5702B /* FactoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3CC2507CCEF00D5702B /* FactoryManager.swift */; };
+		0840B3D02507CD1200D5702B /* FuritViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3CF2507CD1200D5702B /* FuritViewController.swift */; };
+		0840B3D52507CDA700D5702B /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3D42507CDA700D5702B /* Fruit.swift */; };
+		0840B3D72507CDB500D5702B /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3D62507CDB500D5702B /* Apple.swift */; };
+		0840B3D92507CE0600D5702B /* Pear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3D82507CE0600D5702B /* Pear.swift */; };
+		0840B3DB2507CE1400D5702B /* Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B3DA2507CE1400D5702B /* Orange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0840B353250788F100D5702B /* Pattern-Factory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pattern-Factory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0840B356250788F100D5702B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0840B358250788F100D5702B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0840B35A250788F100D5702B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0840B35D250788F100D5702B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0840B35F250788F100D5702B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0840B362250788F100D5702B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0840B364250788F100D5702B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0840B3CC2507CCEF00D5702B /* FactoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryManager.swift; sourceTree = "<group>"; };
+		0840B3CF2507CD1200D5702B /* FuritViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuritViewController.swift; sourceTree = "<group>"; };
+		0840B3D42507CDA700D5702B /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		0840B3D62507CDB500D5702B /* Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
+		0840B3D82507CE0600D5702B /* Pear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pear.swift; sourceTree = "<group>"; };
+		0840B3DA2507CE1400D5702B /* Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		0840B355250788F100D5702B /* Pattern-Factory */ = {
 			isa = PBXGroup;
 			children = (
+				0840B3CB2507CCD200D5702B /* Factory */,
+				0840B3CA2507CC9600D5702B /* other */,
+			);
+			path = "Pattern-Factory";
+			sourceTree = "<group>";
+		};
+		0840B3CA2507CC9600D5702B /* other */ = {
+			isa = PBXGroup;
+			children = (
 				0840B356250788F100D5702B /* AppDelegate.swift */,
-				0840B358250788F100D5702B /* SceneDelegate.swift */,
 				0840B35A250788F100D5702B /* ViewController.swift */,
 				0840B35C250788F100D5702B /* Main.storyboard */,
 				0840B35F250788F100D5702B /* Assets.xcassets */,
 				0840B361250788F100D5702B /* LaunchScreen.storyboard */,
 				0840B364250788F100D5702B /* Info.plist */,
 			);
-			path = "Pattern-Factory";
+			path = other;
+			sourceTree = "<group>";
+		};
+		0840B3CB2507CCD200D5702B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				0840B3CC2507CCEF00D5702B /* FactoryManager.swift */,
+				0840B3CF2507CD1200D5702B /* FuritViewController.swift */,
+				0840B3D12507CD1600D5702B /* Factory */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		0840B3D12507CD1600D5702B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				0840B3D42507CDA700D5702B /* Fruit.swift */,
+				0840B3D62507CDB500D5702B /* Apple.swift */,
+				0840B3D82507CE0600D5702B /* Pear.swift */,
+				0840B3DA2507CE1400D5702B /* Orange.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0840B3D72507CDB500D5702B /* Apple.swift in Sources */,
+				0840B3D52507CDA700D5702B /* Fruit.swift in Sources */,
 				0840B35B250788F100D5702B /* ViewController.swift in Sources */,
+				0840B3DB2507CE1400D5702B /* Orange.swift in Sources */,
+				0840B3D92507CE0600D5702B /* Pear.swift in Sources */,
+				0840B3D02507CD1200D5702B /* FuritViewController.swift in Sources */,
 				0840B357250788F100D5702B /* AppDelegate.swift in Sources */,
-				0840B359250788F100D5702B /* SceneDelegate.swift in Sources */,
+				0840B3CD2507CCEF00D5702B /* FactoryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Pattern-Factory/Info.plist";
+				INFOPLIST_FILE = "Pattern-Factory/other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Pattern-Factory/Info.plist";
+				INFOPLIST_FILE = "Pattern-Factory/other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
